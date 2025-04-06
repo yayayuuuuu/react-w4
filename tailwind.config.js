@@ -1,10 +1,9 @@
 module.exports = {
     content: [
-      "./src/**/*.{html,js,jsx,ts,tsx}", // 告訴 Tailwind CSS 哪些檔案需要進行樣式處理
+      "./src/**/*.{html,js,jsx,ts,tsx}", // 設定你的內容檔案
     ],
     theme: {
       extend: {},
     },
-    plugins: [],
+    plugins: [require("daisyui")], // 加入 DaisyUI 插件
   }
-  
